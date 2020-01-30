@@ -7,16 +7,21 @@ import { AppComponent } from "./app.component";
 import { ControlPanelComponent } from "./control-panel/control-panel.component";
 import { FoodGridComponent } from "./food-grid/food-grid.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-
+import { HomeComponent } from "./home/home.component";
 //
 import { MatButtonModule } from "@angular/material/button";
 
 @NgModule({
-  declarations: [AppComponent, ControlPanelComponent, FoodGridComponent],
+  declarations: [
+    AppComponent,
+    ControlPanelComponent,
+    FoodGridComponent,
+    HomeComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot([{ path: "", component: FoodGridComponent }]),
+    RouterModule.forRoot([{ path: "", component: HomeComponent }]),
     BrowserAnimationsModule,
     MatButtonModule
   ],
