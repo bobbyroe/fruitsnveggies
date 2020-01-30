@@ -22,3 +22,6 @@
 #fall {
   background-color: #c08800;
 }
+#winter[disabled] {
+  background-color: #808080;
+}
