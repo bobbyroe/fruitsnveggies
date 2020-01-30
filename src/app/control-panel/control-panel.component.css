@@ -1,0 +1,20 @@
+.season-btn {
+  width: 100%;
+  height: 25%;
+  margin: 0;
+  border: 0;
+  font-size: 3rem;
+}
+
+#winter {
+  background-color: #00ccff;
+}
+#spring {
+  background-color: #00dd44;
+}
+#summer {
+  background-color: #ffcc00;
+}
+#fall {
+  background-color: #bb9900;
+}
