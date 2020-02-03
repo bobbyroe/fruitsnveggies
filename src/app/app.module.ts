@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HomeComponent } from "./home/home.component";
 //
 import { MatButtonModule } from "@angular/material/button";
+import { FoodItemComponent } from './food-item/food-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ControlPanelComponent,
     FoodGridComponent,
-    HomeComponent
+    HomeComponent,
+    FoodItemComponent
   ],
   imports: [
     BrowserModule,

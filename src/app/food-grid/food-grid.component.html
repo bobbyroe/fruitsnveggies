@@ -1,32 +1,7 @@
 <div class="container">
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
-  <div class="item">❤️</div>
+  <app-food-item
+    *ngFor="let food of foods; let i = index"
+    [food]="food"
+    (click)="foodClick(i)"
+  ></app-food-item>
 </div>

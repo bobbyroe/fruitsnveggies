@@ -6,8 +6,3 @@
   height: 100%;
   grid-template-columns: repeat(5, minmax(100px, 1fr));
 }
-
-.item {
-  background-color: #c0c0c0;
-  font-size: 6rem;
-}
