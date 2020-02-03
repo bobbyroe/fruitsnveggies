@@ -1,14 +1,7 @@
-.half {
+.container {
   margin: 0;
-  display: inline-block;
-  width: 50%;
+  display: grid;
+  width: 100%;
   height: 100%;
-}
-
-#left {
-  background-color: #ff0000;
-}
-
-#right {
-  background-color: #00ff00;
+  grid-template-columns: 1fr 3fr;
 }

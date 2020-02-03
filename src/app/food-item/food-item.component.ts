@@ -1,5 +1,11 @@
 import { Component, Input } from "@angular/core";
 
+interface FoodItem {
+  name: string;
+  seasons: string[];
+  emoji: string;
+}
+
 @Component({
   selector: "app-food-item",
   template: `
@@ -10,7 +16,7 @@ import { Component, Input } from "@angular/core";
   styles: [
     `
       button {
-        font-size: 4rem;
+        font-size: 3rem;
         border: 0;
         background: none;
         width: 100%;
@@ -24,17 +30,15 @@ import { Component, Input } from "@angular/core";
       span {
         display: block;
         width: 100%;
+        margin-top: -1.5rem;
         font-size: 1rem;
         text-align: center;
-      }
-      span:hover {
-        font-color: #0099ff;
       }
     `
   ]
 })
 export class FoodItemComponent {
-  @Input() food: object;
+  @Input() food: FoodItem;
   constructor() {}
   onClick() {
     console.log("click");
