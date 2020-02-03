@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { FoodService } from "../food.service";
 
 @Component({
   selector: "app-food-grid",
@@ -6,11 +7,12 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./food-grid.component.css"]
 })
 export class FoodGridComponent implements OnInit {
-  foods: any[];
-  constructor() {}
+  foods;
+
+  constructor(private foodService: FoodService) {}
 
   ngOnInit() {
-    this.foods = Array(30).fill(null);
+    this.foods = this.foodService.getFoods();
   }
 
   foodClick(id: number) {
