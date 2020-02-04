@@ -16,11 +16,11 @@ export class FoodGridComponent implements OnInit {
   }
 
   foodClick(id: number) {
-    const randomEmoji = "🤢";
-    if (!this.foods[id]) {
-      // replace array item at index [idx] with [randomEmoji]
-      this.foods.splice(id, 1, randomEmoji);
-    }
+    // const randomEmoji = "🤢";
+    // if (!this.foods[id]) {
+    //   // replace array item at index [idx] with [randomEmoji]
+    //   this.foods.splice(id, 1, randomEmoji);
+    // }
     console.log(`${id} clicked.`);
   }
 }

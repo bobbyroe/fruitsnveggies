@@ -1,6 +1,27 @@
+<!--
 <div class="container">
-  <button mat-button class="season-btn" disabled id="winter">Winter</button>
-  <button mat-button class="season-btn" id="spring">Spring</button>
-  <button mat-button class="season-btn" id="summer">Summer</button>
-  <button mat-button class="season-btn" id="fall">Fall</button>
-</div>
+  <button mat-button class="season-btn" id="winter" (click)="setSeason()">
+    Winter
+  </button>
+  <button mat-button class="season-btn" id="spring" (click)="setSeason()">
+    Spring
+  </button>
+  <button mat-button class="season-btn" id="summer" (click)="setSeason()">
+    Summer
+  </button>
+  <button mat-button class="season-btn" id="fall" (click)="setSeason()">
+    Fall
+  </button>
+</div> 
+-->
+<mat-button-toggle-group
+  name="season"
+  aria-label="Season"
+  vertical
+  (click)="seasonChange($event)"
+>
+  <mat-button-toggle value="winter" id="winter">Winter</mat-button-toggle>
+  <mat-button-toggle value="spring" id="spring">Spring</mat-button-toggle>
+  <mat-button-toggle value="summer" id="summer">Summer</mat-button-toggle>
+  <mat-button-toggle value="autumn" id="autumn">Autumn</mat-button-toggle>
+</mat-button-toggle-group>

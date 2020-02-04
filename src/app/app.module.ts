@@ -10,7 +10,8 @@ import { FoodGridComponent } from "./food-grid/food-grid.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HomeComponent } from "./home/home.component";
 //
-import { MatButtonModule } from "@angular/material/button";
+// import { MatButtonModule } from "@angular/material/button";
+import { MatButtonToggleModule } from "@angular/material";
 import { FoodItemComponent } from "./food-item/food-item.component";
 
 @NgModule({
@@ -27,7 +28,7 @@ import { FoodItemComponent } from "./food-item/food-item.component";
     AppRoutingModule,
     RouterModule.forRoot([{ path: "", component: HomeComponent }]),
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
