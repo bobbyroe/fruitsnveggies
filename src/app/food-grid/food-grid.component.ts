@@ -7,13 +7,11 @@ import { FoodService } from "../food.service";
   styleUrls: ["./food-grid.component.css"]
 })
 export class FoodGridComponent implements OnInit {
-  foods;
+  foods = this.foodService.filteredFoods$;
 
   constructor(private foodService: FoodService) {}
 
-  ngOnInit() {
-    this.foods = this.foodService.getFoods();
-  }
+  ngOnInit() {}
 
   foodClick(id: number) {
     // const randomEmoji = "🤢";
@@ -21,6 +19,6 @@ export class FoodGridComponent implements OnInit {
     //   // replace array item at index [idx] with [randomEmoji]
     //   this.foods.splice(id, 1, randomEmoji);
     // }
-    console.log(`${id} clicked.`);
+    console.log(`${id} clicked`);
   }
 }

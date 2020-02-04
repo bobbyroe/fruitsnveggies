@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { FoodService } from "../food.service";
 
 @Component({
   selector: "app-control-panel",
@@ -6,12 +7,12 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./control-panel.component.css"]
 })
 export class ControlPanelComponent implements OnInit {
-  constructor() {}
+  constructor(private foodService: FoodService) {}
 
   ngOnInit() {}
 
   seasonChange({ target }) {
     const val = target.textContent.toLowerCase();
-    console.log(val);
+    this.foodService.setSeason(val);
   }
 }
