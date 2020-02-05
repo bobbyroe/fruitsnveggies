@@ -1,3 +1,7 @@
+:root {
+  --num-fruit-columns: 10;
+  /* +calc(100% / 14); */
+}
 html,
 body {
   height: 100%;
@@ -6,4 +10,15 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@media (max-width: 1190px) {
+  :root {
+    --num-fruit-columns: 6;
+  }
+}
+@media (max-width: 810px) {
+  :root {
+    --num-fruit-columns: 3;
+  }
 }
