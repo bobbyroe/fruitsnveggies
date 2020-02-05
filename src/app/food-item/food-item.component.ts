@@ -16,13 +16,11 @@ interface FoodItem {
   styles: [
     `
       button {
-        font-size: 3rem;
+        display: block;
+        margin: 0 auto;
+        font-size: 10vmax;
         border: 0;
         background: none;
-        width: 100%;
-        height: 100%;
-        /* align-self: center; */
-        /* justify-self: center; */
       }
       button:hover {
         background-color: #ffffff;
@@ -30,7 +28,6 @@ interface FoodItem {
       span {
         display: block;
         width: 100%;
-        margin-top: -1.5rem;
         font-size: 1rem;
         text-align: center;
       }

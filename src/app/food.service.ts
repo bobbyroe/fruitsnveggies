@@ -10,13 +10,18 @@ export class FoodService {
   items = [];
   private seasonFilterBS = new BehaviorSubject<string>("any");
   season$ = this.seasonFilterBS.asObservable();
-  foods$ = this.getFoods();
+  // filter out blank emojis
+  foods$ = this.getFoods().pipe(
+    map(foods => (foods as any).filter(food => !food.blank))
+  );
   filteredFoods$ = combineLatest(this.foods$, this.season$).pipe(
     map(([foods, season]) => {
       const filtered =
         season === "any"
           ? foods
-          : (foods as any).filter(food => food.seasons.includes(season));
+          : (foods as any).filter(
+              food => !food.blank && food.seasons.includes(season)
+            );
       return filtered;
     })
   );

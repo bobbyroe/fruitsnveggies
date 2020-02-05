@@ -5,7 +5,7 @@
     "emoji": "🍎"
   },
   { "name": "Apricots", "seasons": ["spring", "summer"], "emoji": "🍑" },
-  { "name": "Asparagus", "seasons": ["spring"], "emoji": "🧪" },
+  { "name": "Asparagus", "seasons": ["spring"], "emoji": "🧪", "blank": true },
   {
     "name": "Avocados",
     "seasons": ["spring", "summer", "winter"],
@@ -53,7 +53,12 @@
     "seasons": ["spring", "summer", "autumn", "winter"],
     "emoji": "🍋"
   },
-  { "name": "Lettuce", "seasons": ["spring", "autumn"], "emoji": "🥬" },
+  {
+    "name": "Lettuce",
+    "seasons": ["spring", "autumn"],
+    "emoji": "🥬",
+    "blank": true
+  },
   {
     "name": "Limes",
     "seasons": ["spring", "summer", "autumn", "winter"],
@@ -72,7 +77,7 @@
     "emoji": "🍍"
   },
   { "name": "Radishes", "seasons": ["spring", "autumn"], "emoji": "🎈" },
-  { "name": "Rhubarb", "seasons": ["spring"], "emoji": "🦜" },
+  { "name": "Rhubarb", "seasons": ["spring"], "emoji": "🦜", "blank": true },
   { "name": "Spinach", "seasons": ["spring", "autumn"], "emoji": "🌿" },
   { "name": "Strawberries", "seasons": ["spring", "summer"], "emoji": "🍓" },
   {
@@ -88,7 +93,12 @@
   { "name": "Beets", "seasons": ["summer", "autumn", "winter"], "emoji": "🌰" },
   { "name": "Bell Peppers", "seasons": ["summer", "autumn"], "emoji": "🥊" },
   { "name": "Blackberries", "seasons": ["summer"], "emoji": "🎱" },
-  { "name": "Blueberries", "seasons": ["summer"], "emoji": "🥏" },
+  {
+    "name": "Blueberries",
+    "seasons": ["summer"],
+    "emoji": "🥏",
+    "blank": true
+  },
   { "name": "Cantaloupe", "seasons": ["summer"], "emoji": "🍈" },
   { "name": "Cherries", "seasons": ["summer"], "emoji": "🍒" },
   { "name": "Corn", "seasons": ["summer"], "emoji": "🌽" },
@@ -97,7 +107,12 @@
   { "name": "Green Beans", "seasons": ["summer", "autumn"], "emoji": "🐊" },
   { "name": "Honeydew Melon", "seasons": ["summer"], "emoji": "🍈" },
   { "name": "Lima Beans", "seasons": ["summer"], "emoji": "🍃" },
-  { "name": "Mangos", "seasons": ["summer", "autumn"], "emoji": "🥭" },
+  {
+    "name": "Mangos",
+    "seasons": ["summer", "autumn"],
+    "emoji": "🥭",
+    "blank": true
+  },
   { "name": "Okra", "seasons": ["summer"], "emoji": "🌵" },
   { "name": "Peaches", "seasons": ["summer"], "emoji": "🍑" },
   { "name": "Plums", "seasons": ["summer"], "emoji": "🔮" },
@@ -112,11 +127,21 @@
     "seasons": ["autumn", "winter"],
     "emoji": "👒"
   },
-  { "name": "Cauliflower", "seasons": ["autumn"], "emoji": "🦷" },
+  {
+    "name": "Cauliflower",
+    "seasons": ["autumn"],
+    "emoji": "🦷",
+    "blank": true
+  },
   { "name": "Cranberries", "seasons": ["autumn"], "emoji": "🏓" },
   { "name": "Ginger", "seasons": ["autumn"], "emoji": "🐫" },
   { "name": "Grapes", "seasons": ["autumn"], "emoji": "🍇" },
-  { "name": "Parsnips", "seasons": ["autumn", "winter"], "emoji": "🦴" },
+  {
+    "name": "Parsnips",
+    "seasons": ["autumn", "winter"],
+    "emoji": "🦴",
+    "blank": true
+  },
   { "name": "Pears", "seasons": ["autumn", "winter"], "emoji": "🍐" },
   { "name": "Potatoes", "seasons": ["autumn", "winter"], "emoji": "🥔" },
   { "name": "Pumpkin", "seasons": ["autumn", "winter"], "emoji": "🎃" },
@@ -126,7 +151,12 @@
     "seasons": ["autumn", "winter"],
     "emoji": "🍠"
   },
-  { "name": "Winter Squash", "seasons": ["autumn", "winter"], "emoji": "🦠" },
+  {
+    "name": "Winter Squash",
+    "seasons": ["autumn", "winter"],
+    "emoji": "🦠",
+    "blank": true
+  },
   { "name": "Grapefruit", "seasons": ["winter"], "emoji": "🎾" },
   { "name": "Leeks", "seasons": ["winter"], "emoji": "🌾" },
   { "name": "Oranges", "seasons": ["winter"], "emoji": "🍊" }

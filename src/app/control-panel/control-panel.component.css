@@ -16,10 +16,11 @@ mat-button-toggle-group {
   font-size: 3rem;
 } */
 mat-button-toggle {
+  padding: 4rem 0;
   font-size: 3rem;
   /* vertical-align: middle; */
   background-color: rgba(0, 255, 0, 0.5);
-  color: #000;
+  color: #202020;
   /* height: 100%;
   width: 100%; */
 }
