@@ -18,7 +18,7 @@ interface FoodItem {
       button {
         display: block;
         margin: 0 auto;
-        font-size: 10vmax;
+        font-size: 5vmax;
         border: 0;
         background: none;
       }
