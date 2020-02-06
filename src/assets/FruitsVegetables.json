@@ -5,6 +5,7 @@
     "emoji": "🍎"
   },
   { "name": "Apricots", "seasons": ["spring", "summer"], "emoji": "🍑" },
+  {
     "name": "Asparagus",
     "seasons": ["spring"],
     "emoji": "🧪",
