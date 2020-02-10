@@ -9,18 +9,25 @@ import { map, tap } from "rxjs/operators";
 export class FoodService {
   items = [];
   private seasonFilterBS = new BehaviorSubject<string>("any");
+  private foodFilterBS = new BehaviorSubject<string>("both");
   season$ = this.seasonFilterBS.asObservable();
+  foodFilter$ = this.foodFilterBS.asObservable();
   // filter out blank emojis
   foods$ = this.getFoods().pipe(
-    map(foods => (foods as any).filter(food => !food.blank))
+    map(foods => (foods as any).filter(food => !food.blank && !food.alt_emoji))
   );
-  filteredFoods$ = combineLatest(this.foods$, this.season$).pipe(
-    map(([foods, season]) => {
+  filteredFoods$ = combineLatest(
+    this.foods$,
+    this.season$,
+    this.foodFilter$
+  ).pipe(
+    map(([foods, season, foodFilter]) => {
       const filtered =
         season === "any"
           ? foods
           : (foods as any).filter(
-              food => !food.blank && food.seasons.includes(season)
+              food =>
+                !food.blank && !food.alt_emoji && food.seasons.includes(season)
             );
       return filtered;
     })
@@ -32,5 +39,9 @@ export class FoodService {
   }
   setSeason(value) {
     this.seasonFilterBS.next(value);
+  }
+
+  setFoodFilter(foodFilter) {
+    console.log(foodFilter);
   }
 }

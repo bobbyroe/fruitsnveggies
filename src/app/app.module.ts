@@ -9,11 +9,9 @@ import { ControlPanelComponent } from "./control-panel/control-panel.component";
 import { FoodGridComponent } from "./food-grid/food-grid.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HomeComponent } from "./home/home.component";
-//
-// import { MatButtonModule } from "@angular/material/button";
-import { MatButtonToggleModule } from "@angular/material";
 import { FoodItemComponent } from "./food-item/food-item.component";
-
+// Material Components
+import { MatButtonToggleModule, MatSliderModule } from "@angular/material";
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +26,8 @@ import { FoodItemComponent } from "./food-item/food-item.component";
     AppRoutingModule,
     RouterModule.forRoot([{ path: "", component: HomeComponent }]),
     BrowserAnimationsModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
