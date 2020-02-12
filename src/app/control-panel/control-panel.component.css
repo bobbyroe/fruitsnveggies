@@ -5,10 +5,14 @@ mat-button-toggle-group {
   background-color: #000000;
 }
 mat-button-toggle {
-  padding: 4rem 0;
+  padding: 3rem 0;
   font-size: 3rem;
   background-color: rgba(0, 255, 0, 0.5);
   color: #202020;
+}
+mat-button-toggle:focus-within {
+  color: #09f;
+  font-weight: bold;
 }
 #winter {
   background-color: #00ccff;

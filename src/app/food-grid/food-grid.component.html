@@ -1,7 +1,7 @@
-<div class="container">
+<section>
   <app-food-item
     *ngFor="let food of foods | async; let i = index"
     [food]="food"
     (click)="foodClick(i)"
   ></app-food-item>
-</div>
+</section>

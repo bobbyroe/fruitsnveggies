@@ -11,23 +11,33 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HomeComponent } from "./home/home.component";
 import { FoodItemComponent } from "./food-item/food-item.component";
 // Material Components
-import { MatButtonToggleModule, MatSliderModule } from "@angular/material";
+import {
+  MatButtonToggleModule,
+  MatSliderModule,
+  MatButtonModule
+} from "@angular/material";
+import { IntroComponent } from "./intro/intro.component";
 @NgModule({
   declarations: [
     AppComponent,
     ControlPanelComponent,
     FoodGridComponent,
     HomeComponent,
-    FoodItemComponent
+    FoodItemComponent,
+    IntroComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    RouterModule.forRoot([{ path: "", component: HomeComponent }]),
+    RouterModule.forRoot([
+      { path: "", component: IntroComponent },
+      { path: "home", component: HomeComponent }
+    ]),
     BrowserAnimationsModule,
     MatButtonToggleModule,
-    MatSliderModule
+    MatSliderModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
